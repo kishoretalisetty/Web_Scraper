@@ -1,0 +1,21 @@
+Documentattion report : 
+
+API:  curl --location 'localhost:8080/scrape/getAround/?startDate=2024-02-15&startTime=07%3A30&endDate=2024-02-19&endTime=07%3A00'
+Validations: 
+    startDate/endDate : yyyy-MM-dd 
+    startTime/endTime : HH:mm (24 hr format)
+    endDate & endTime > startDate & startTime > current Date And Time
+Response : 
+    Success : 200
+    Body : List<Car>
+
+
+Approach : 
+    1. Exposed an API for the user to fetch available vehicle details 
+    2. free proxies fetched every 3 minutes from below url
+        URL: https://api.proxyscrape.com/v3/free-proxy-list/get?request=displayproxies&protocol=http&timeout=15000&proxy_format=ipport&format=text
+    3. Rotating proxies for every api call
+        API : https://getaround.com/search.json?address=East New York, Brooklyn, NY&address_source=poi&country_scope=US&display_view=list&end_date={endDate}&end_time={endTime}&latitude=40.6665&longitude=-73.8832&picked_car_ids=EMPTY&poi_id=2631&program=getaround&start_date={startDate}&start_time={startTime}&view_mode=list&page={page}
+
+        API2: https://getaround.com+ car.getFriendlyCarPath
+ 
