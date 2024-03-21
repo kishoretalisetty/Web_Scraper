@@ -20,7 +20,7 @@ The objective of this assignment is to develop a web scraper to extract vehicle 
 4. **Lombok:** Used for reducing boilerplate code by automatically generating getters, setters, constructors, etc.
 5. **Slf4j:** Integrated for logging purposes to facilitate debugging and monitoring.
 6. **Spring Boot Starter Log4j2:** Configured for logging with Log4j2, providing flexible logging options.
-7. **Proxies:** Implemented to enhance security and anonymity during HTTP requests, ensuring robustness against potential blocking or throttling from the GetAround website.
+7. **Rotating Proxies:** Implemented to enhance security and anonymity during HTTP requests, ensuring robustness against potential blocking or throttling from the GetAround website.
 8. **Asynchronous Processing:** Utilized asynchronous processing techniques to improve performance and efficiency when parsing HTML pages and fetching data.
 
 ## Validations
