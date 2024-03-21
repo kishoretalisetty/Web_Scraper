@@ -5,7 +5,7 @@
 This project aims to develop a web scraper capable of extracting specific information from the GetAround website, focusing on vehicle listings in the New York area. The scraper allows users to retrieve details about available vehicles based on location, date, and time inputs.
 
 ## Problem Statement
-The objective of this assignment is to develop a web scraper to extract vehicle details from the GetAround website, specifically targeting the New York area. The scraper should handle inputs for location, start date/time, and end date/time, and extract relevant information such as car name, image URL, distance, rating, rating count, price, latitude, and longitude for each vehicle.
+The objective of this project is to develop a web scraper to extract vehicle details from the GetAround website, specifically targeting the New York area. The scraper should handle inputs for location, start date/time, and end date/time, and extract relevant information such as car name, image URL, distance, rating, rating count, price, latitude, and longitude for each vehicle.
 
 ## Features
 - **Scrape Vehicle Listings:** Extracts vehicle details such as car name, image URL, distance, rating, rating count, price, latitude, and longitude from GetAround.
